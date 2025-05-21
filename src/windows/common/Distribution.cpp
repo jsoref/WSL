@@ -141,7 +141,7 @@ DistributionList ReadFromManifest(const std::wstring& url)
             }
         }
 
-        // The "Default" string takes precendence. If not present, use the first legacy distro entry.
+        // The "Default" string takes precedence. If not present, use the first legacy distro entry.
         if (!distros.Default.has_value() && distros.Distributions.has_value() && distros.Distributions->size() > 0)
         {
             distros.Default = (*distros.Distributions)[0].Name;
@@ -247,7 +247,7 @@ std::variant<Distribution, ModernDistributionVersion> wsl::windows::common::dist
         auto distribution = LookupDistributionInManifest(manifest.OverrideManifest.value(), name, legacy);
         if (distribution.has_value())
         {
-            EMIT_USER_WARNING(wsl::shared::Localization::MessageDistributionOverriden(name));
+            EMIT_USER_WARNING(wsl::shared::Localization::MessageDistributionOverridden(name));
             return distribution.value();
         }
     }
