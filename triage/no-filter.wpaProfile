@@ -21,7 +21,7 @@
                 <Column Guid="8b4c40f8-0d99-437d-86ab-56ec200137dc" Name="Provider Name" SortPriority="1" Width="200" IsVisible="true">
                   <ColorQueryEntries />
                 </Column>
-                <Column Guid="2a23f9b1-65d6-46d2-87b2-72f3606b7f75" Name="Provider Id" SortPriority="5" Width="100" IsVisible="false">
+                <Column Guid="2a23f9b1-65d6-46d2-87b2-72f3606b7f75" Name="Provider ID" SortPriority="5" Width="100" IsVisible="false">
                   <ColorQueryEntries />
                 </Column>
                 <Column Guid="511777f7-30ef-4e86-bd0b-0facaf23a0d3" Name="Task Name" SortPriority="2" Width="80" IsVisible="true">
