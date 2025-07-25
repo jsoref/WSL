@@ -2716,7 +2716,7 @@ void wsl::core::networking::WslMirroredNetworkManager::TraceLoggingRundown() con
                     TraceLoggingValue(route.Route.Metric, "metric"),
                     TraceLoggingValue(
                         !route.CanConflictWithLinuxAutoGenRoute() || route.LinuxConflictRemoved,
-                        "linuxConflictRemovedOrDoesntExist"),
+                        "linuxConflictRemovedOrNonexistent"),
                     TraceLoggingValue(wsl::core::networking::ToString(route.SyncStatus), "syncStatus"),
                     TraceLoggingValue(route.SyncRetryCount, "syncRetryCount"));
             }
